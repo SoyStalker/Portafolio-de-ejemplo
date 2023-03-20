@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*   border: 1px solid red; */
+}
+
+/* Colores */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+  background-color: #b1ff21;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  margin: 5vh;
+  background-color: rgba(254, 249, 195, 0.342);
+}
+
+main {
+  background-color: #b1ff21;
+  border-radius: 20px;
+  height: 50%;
+  border: 1px solid black;
+}
+
+main nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.encerrado {
+  padding: 30px;
+  border-radius: 50px;
+  margin-top: 20px;
+  gap: 20px;
+  border: 2px solid gray;
+  box-shadow: 0 0 30px black;
+  background-color: white;
+}
+
+nav {
+  background-color: #fef9c3;
+  border-radius: 20px;
+  height: 30px;
+  min-width: 50vh;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 0 0 40px black;
+}
+
+nav a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  transition: all 0.5s;
+}
+nav a:hover {
+  color: #13f31e;
+}
+
+.imagen-nombre {
+  margin: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.imagen-nombre img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+h1:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+.centrar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #b1ff21;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.card p {
+  font-size: 25px;
+}
+.card img {
+  border-radius: 20%;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.card-proyectos {
+  width: 100%;
+  text-align: center;
+  background-color: #b1ff21;
+  border-radius: 5%;
+  padding: 20px;
+  box-shadow: 5px 5px 50px;
+}
+.card-proyectos img {
+  width: 50%;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 0 0 30px black;
+}
+.card-proyectos h3 {
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.card-proyectos p {
+  padding: 20px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.footer {
+  background-color: gray;
+  color: white;
+  margin-top: 50px;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 40px;
+  border: 1px solid black;
+  box-shadow: 20px 20px 20px black;
+}
+.footer p:hover {
+  color: red;
+}
+.footer h2:hover {
+  color: red;
+}
+
+@media (max-width: 740px) {
+  body {
+    padding: 20px;
+  }
+
+  nav {
+    height: 250px;
+    min-width: 10px;
+    flex-direction: column;
+  }
+  nav a {
+    padding: 15px;
+    font-size: 30px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .imagen-nombre {
+    flex-direction: column;
+  }
+
+  .card {
+    background-color: #b1ff21;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .card h2 {
+    font-size: 50px;
+  }
+  .card p {
+    font-size: 30px;
+  }
+
+  main h1 {
+    font-size: 70px;
+  }
+  main p {
+    font-size: 40px;
+  }
+
+  section {
+    font-size: 40px;
+  }
+
+  .card-proyectos {
+    width: 100%;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 5px 5px 50px;
+    padding: 5px;
+  }
+  .card-proyectos img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  .card-proyectos h3 {
+    font-size: 70px;
+    margin: 10px 0;
+  }
+  .card-proyectos p {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: justify;
+  }
+}
